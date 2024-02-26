@@ -1,17 +1,18 @@
+import { ModeToggle } from "~/components/ui/toggle";
+
 export const Navbar = () => {
   return (
     <>
-      <nav className="flex justify-between container px-12 py-9">
-        <div className="flex justify-center">
-            <h1>natori</h1>
+      <nav className="flex justify-between px-12 py-5 sticky top-0 dark:bg-zinc-950 bg-opacity-70 backdrop-filter backdrop-blur-lg z-10">
+        <div className="flex-row justify-between items-center pt-1">
+          <div className="cursor-pointer">
+            <div className="w-[30px] h-[2px] my-[6px] bg-black dark:bg-white"></div>
+            <div className="w-[30px] h-[2px] my-[6px] bg-black dark:bg-white"></div>
+            <div className="w-[30px] h-[2px] my-[6px] bg-black dark:bg-white"></div>
+          </div>
         </div>
-        <div className="flex-row items-center space-x-16">
-            <ul className="font-montserrat flex lg:space-x-12 md:space-x-6">
-                <li>Home</li>
-                <li>Videos</li>
-                <li>Albums</li>
-                <li>About</li>
-            </ul>
+        <div className="flex justify-center items-center">
+          <ModeToggle />
         </div>
       </nav>
     </>
