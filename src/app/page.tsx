@@ -22,6 +22,7 @@ import natori from "~/assets/images/natori-cover.jpg";
 import natoriLogo from "~/assets/images/natori.png";
 
 export default function Home() {
+  
   return (
     <main>
       <Navbar />
@@ -33,6 +34,7 @@ export default function Home() {
             alt="Natori Cover"
             width={2000}
             height={2000}
+            objectFit="responsive"
           />
           <div className="absolute w-[500px] right-0 bottom-0 mb-10 mr-10">
             <Image
@@ -40,6 +42,7 @@ export default function Home() {
               alt="Natori Logo"
               width={500}
               height={500}
+              objectFit="responsive"
             />
             <p className="text-center text-md text-white">
               natori / なとり a Singer-Songwriter from Japan.
